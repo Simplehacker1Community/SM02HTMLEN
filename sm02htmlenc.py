@@ -26,5 +26,5 @@ else:
   print("update not found")
   system(f"xdg-open https://t.me/sm02present")
   print("\033[33mPlease visit\n \033[31m https://t.me/sm02present")
-  system("python3 main_enc.cpython-39.pyc")
+  system("python3 sm02htmlen.cpython-39.pyc")
         
