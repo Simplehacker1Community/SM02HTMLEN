@@ -5,7 +5,7 @@ print("█▄─██─▄█▄─▄▄─██▀▄─██─▄─▄�
 print("██─██─███─▄▄▄██─▀─████─████─▄█▀█")
 print("▀▀▄▄▄▄▀▀▄▄▄▀▀▀▄▄▀▄▄▀▀▄▄▄▀▀▄▄▄▄▄▀")
 print("\033[31m Checking update .....")
-system('cat .version.txt')
+system('cat .version.txt && rm .ping')
 system('wget https://raw.githubusercontent.com/Simplehacker1Community/SM02HTMLEN/simplehacker/.ping &')
 update = 'sm02'
 file1 = open(".ping", "r")
