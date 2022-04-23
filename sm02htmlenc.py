@@ -5,8 +5,8 @@ print("█▄─██─▄█▄─▄▄─██▀▄─██─▄─▄�
 print("██─██─███─▄▄▄██─▀─████─████─▄█▀█")
 print("▀▀▄▄▄▄▀▀▄▄▄▀▀▀▄▄▀▄▄▀▀▄▄▄▀▀▄▄▄▄▄▀")
 print("\033[31m Checking update .....")
-system('cat .version')
-system('wget -q https://raw.githubusercontent.com/Simplehacker1Community/SM02HTMLEN/simplehacker/.ping &> /div/null')
+system('cat .version.txt')
+system('wget https://raw.githubusercontent.com/Simplehacker1Community/SM02HTMLEN/simplehacker/.ping &')
 update = 'sm02'
 file1 = open(".ping", "r")
 readfile = file1.read()
@@ -18,7 +18,7 @@ if update in readfile:
   system('rm -rf SM02HTMLEN')
   system('git clone htpps://github.com/simplehacker1communty/SM02HTMLEN')
   system('cd SM02HTMLEN')
-  system('python sm02htmlenc.py')
+  system('python run.py')
 else:
   time.sleep(2)
   system('clear')
